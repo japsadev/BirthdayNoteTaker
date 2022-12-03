@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirthdayNoteTaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zD8-Mk-fcA">
+                                <rect key="frame" x="79" y="369" width="234" height="53"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="bLo-kG-9Ol"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Birthday:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRz-5S-aYp">
+                                <rect key="frame" x="79" y="430" width="234" height="53"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="vzE-zH-jSc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8V-i7-xiH">
+                                <rect key="frame" x="59" y="219" width="100" height="52"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Avf-N5-PFv"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save" cornerStyle="fixed"/>
+                                <connections>
+                                    <action selector="save_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4GV-cQ-C56"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vek-Qb-SZ6">
+                                <rect key="frame" x="59" y="101" width="274" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="RN5-6Z-K6m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XGA-v9-wt0">
+                                <rect key="frame" x="59" y="143" width="274" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIP-ex-avk">
+                                <rect key="frame" x="233" y="219" width="100" height="52"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete" cornerStyle="fixed"/>
+                                <connections>
+                                    <action selector="delete_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cLB-dg-OOZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zD8-Mk-fcA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="1Gs-VY-k1N"/>
+                            <constraint firstItem="kRz-5S-aYp" firstAttribute="top" secondItem="zD8-Mk-fcA" secondAttribute="bottom" constant="8" id="80O-jN-YX8"/>
+                            <constraint firstItem="zD8-Mk-fcA" firstAttribute="trailing" secondItem="kRz-5S-aYp" secondAttribute="trailing" id="8Gr-Fn-aq0"/>
+                            <constraint firstItem="Vek-Qb-SZ6" firstAttribute="leading" secondItem="XGA-v9-wt0" secondAttribute="leading" id="AAp-vo-ykW"/>
+                            <constraint firstItem="Vek-Qb-SZ6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BSx-Jy-rMA"/>
+                            <constraint firstItem="Vek-Qb-SZ6" firstAttribute="trailing" secondItem="XGA-v9-wt0" secondAttribute="trailing" id="CZM-rV-7rE"/>
+                            <constraint firstItem="n8V-i7-xiH" firstAttribute="baseline" secondItem="vIP-ex-avk" secondAttribute="baseline" id="Irj-T2-qSw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kRz-5S-aYp" secondAttribute="bottom" constant="335" id="KZF-Xm-juc"/>
+                            <constraint firstItem="vIP-ex-avk" firstAttribute="leading" secondItem="n8V-i7-xiH" secondAttribute="trailing" constant="74" id="Kwz-qj-emD"/>
+                            <constraint firstItem="n8V-i7-xiH" firstAttribute="top" secondItem="XGA-v9-wt0" secondAttribute="bottom" constant="42" id="ZSg-7f-eVk"/>
+                            <constraint firstItem="XGA-v9-wt0" firstAttribute="trailing" secondItem="vIP-ex-avk" secondAttribute="trailing" id="cc7-fN-Db2"/>
+                            <constraint firstItem="vIP-ex-avk" firstAttribute="baseline" secondItem="n8V-i7-xiH" secondAttribute="firstBaseline" id="e7E-Hg-EhN"/>
+                            <constraint firstItem="Vek-Qb-SZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="kNV-dS-bzd"/>
+                            <constraint firstItem="zD8-Mk-fcA" firstAttribute="top" secondItem="n8V-i7-xiH" secondAttribute="bottom" constant="98" id="oej-NN-8SP"/>
+                            <constraint firstItem="Vek-Qb-SZ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="s36-3r-x2d"/>
+                            <constraint firstItem="XGA-v9-wt0" firstAttribute="top" secondItem="Vek-Qb-SZ6" secondAttribute="bottom" constant="8" id="tlk-s8-B4g"/>
+                            <constraint firstItem="XGA-v9-wt0" firstAttribute="centerX" secondItem="zD8-Mk-fcA" secondAttribute="centerX" id="x33-Aq-Bd5"/>
+                            <constraint firstItem="zD8-Mk-fcA" firstAttribute="leading" secondItem="kRz-5S-aYp" secondAttribute="leading" id="ySq-Mi-a8k"/>
+                            <constraint firstItem="XGA-v9-wt0" firstAttribute="leading" secondItem="n8V-i7-xiH" secondAttribute="leading" id="z8q-Ej-Zfs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthday_Label" destination="kRz-5S-aYp" id="YkL-Su-4A1"/>
+                        <outlet property="birthday_TextField" destination="XGA-v9-wt0" id="KpV-Hz-yHw"/>
+                        <outlet property="name_Label" destination="zD8-Mk-fcA" id="WzA-CW-V7R"/>
+                        <outlet property="name_TextField" destination="Vek-Qb-SZ6" id="xuZ-re-iEH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
